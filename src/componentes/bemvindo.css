@@ -1,0 +1,50 @@
+.bemVindo{
+    background-color: #787878;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+}
+.bemVindoDois{
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Para centralizar o texto */
+    flex: 1; /* Garante que o conteúdo ocupe o espaço restante */
+}
+.bemVindoImagem{
+    max-width: 100%; /* Faz a imagem não ultrapassar o limite do seu container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.linhaTextoBemVindoUm{
+    font-size: 60px;
+}
+.linhaTextoBemVindoDois{
+    font-size: 35px;
+
+}
+.bemVindolinha{
+    font-size: 40px;
+}
+.bemVindolinhaDois{
+    font-size: 40px;
+}
+.blocosBemvindo{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    gap: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .bemVindo {
+        flex-direction: column; /* Organiza os itens em coluna em telas pequenas */
+        align-items: center; /* Alinha tudo no centro */
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .bemVindoImagem {
+        margin-top: 20px; /* Dá algum espaço entre o texto e a imagem */
+    }
+}

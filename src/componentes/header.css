@@ -1,0 +1,61 @@
+.divHeader{
+    background-color: #F0F0F0;
+    width: 100%;
+}
+.divHeaderTwo {
+    display: flex;
+    justify-content: space-around; /* Distribui os elementos horizontalmente */
+    align-items: center;
+    padding: 10px; /* Adiciona algum espaçamento interno */
+}
+.navListHeader {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 8px;
+}
+.logo{
+    max-width: 200px;
+}
+.logoHeader{
+    padding: 5px;
+    margin: 5px;
+}
+.carrinho{
+    max-width: 30px;
+}
+.carrinhoHeader{
+    display: flex;
+    justify-content: space-around; /* Distribui os elementos horizontalmente */
+    align-items: center;
+    gap: 10px;
+    color: #727376;
+}
+
+.divHeaderInicio,
+.divHeaderProdutos,
+.divHeaderLogins,
+.divHeaderContato,
+.comprarCarrinho{
+  display: inline;
+  color: #727376;
+  margin-right: 20px;
+  text-decoration: none; /* Remove o sublinhado padrão */
+  cursor: pointer; /* Altera o cursor para um indicador de link */
+}
+
+.divHeaderInicio:hover,
+.divHeaderProdutos:hover,
+.divHeaderContato:hover{
+  text-decoration: underline; /* Adiciona sublinhado quando o mouse passa sobre o link */
+}
+.divHeaderLogins,.comprarCarrinho {
+    text-decoration: none;
+  }
+  
+.divHeaderLogins:hover {
+    text-decoration: underline; 
+  }
+.comprarCarrinho:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+.produtos {
+    background-color: #F0F0F0;
+    padding: 20px; /* Espaçamento interno para melhor visualização */
+}
+
+.blocosProdutosUm, .blocosProdutosDois {
+    display: flex;
+    justify-content: space-around; /* Espaça os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    gap: 10px; /* Espaço entre as imagens */
+}
+
+.produtoImagemUm, .produtoImagemDois, .produtoImagemTres, .produtoImagemQuatro {
+    width: 500px;
+    height: 420px;
+    padding: 5px;
+}
+.linhaTextoProduto{
+    text-align: center;
+    font-size: 30px;
+    color: #585858;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .blocosProdutosUm, .blocosProdutosDois {
+        flex-direction: column; /* Coloca os itens em uma coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .produtoImagemUm, .produtoImagemDois, .produtoImagemTres, .produtoImagemQuatro {
+        width: 90%; /* Ajusta a largura das imagens */
+        height: auto; /* Mantém a proporção */
+    }
+}
